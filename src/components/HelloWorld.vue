@@ -1,10 +1,12 @@
 <script setup>
-import {ref} from 'vue'
-const count = ref(0)
+
+import { defineProps } from 'vue';
+defineProps(['title'])
+
 </script>
 
 
 
 <template>
-<button @click="count++">{{count}}</button>
+<h2>{{ title }}</h2>
 </template>
