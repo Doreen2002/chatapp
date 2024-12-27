@@ -1,11 +1,14 @@
 <template>
-
-  <HelloWorld v-for ="con in content" :key = "con.id" :title="con.title"/>
+<div :style="{fontSize:fontSize + 'em'}">
+  <HelloWorld v-for ="con in content" :key = "con.id" :title="con.title" @enlarge-text="fontSize+=1"/>
+</div>
+  
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import {ref} from 'vue';
+
 
 export default {
   name: 'App',
@@ -18,7 +21,8 @@ export default {
 }, {
   id : 2, title: 'Test Title 2'
 }])
-return {content}
+const fontSize = ref(0)
+return {content, fontSize}
   }
  
 }
