@@ -4,7 +4,7 @@ import { Bars3Icon,PlusIcon , MagnifyingGlassIcon} from '@heroicons/vue/24/solid
 
 
 <template>
-    <div class="max-w-3xl">
+    <div class="">
         <div class="flex flex-col ">
             <div class="flex justify-between h-10 bg-pink-300 place-items-center px-3 text-white">
                 <div><Bars3Icon class="size-6 " /></div>
