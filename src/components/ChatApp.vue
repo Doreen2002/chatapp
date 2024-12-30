@@ -6,7 +6,11 @@ import MessageList from './MessageList.vue';
 <template>
     <div class="max-w-3xl">
         <ChatHeader/>
-        <MessageList/>
+        <div class="border h-dvh border-gray-200 py-3 mx-2 rounded-t-lg">
+            <MessageList/>
+        </div>
+        
+        
 
     </div>
    
